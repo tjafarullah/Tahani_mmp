@@ -17,6 +17,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class ScheduleAppointmentTests {
 	
 WebDriver driver; 
+
+   /*
+    *  Adding testcases to the project and changing the date for appointment
+    */
 	
 	@Test
 	public void validateAppointmentDetails() throws Exception
@@ -31,7 +35,7 @@ WebDriver driver;
 		lPage.login("ria1","Ria12345");
 		helperObj.navigateToAModule("Schedule Appointment");
 		ScheduleAppointmentPage sPage = new ScheduleAppointmentPage(driver);
-		HashMap<String,String> hMap =sPage.scheduleAppointment("Dr.Charlie","20/11/2020");
+		HashMap<String,String> hMap =sPage.scheduleAppointment("Dr.Charlie","20/10/2020");
 		HomePage hPage = new HomePage(driver);
 		boolean hresult = hPage.validateAppointmentDetails(hMap);
 		Assert.assertTrue(hresult);
