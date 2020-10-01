@@ -1,11 +1,13 @@
 package org.iit.mmp.patientmodule.pages;
-
 import java.util.HashMap;
-
 import org.iit.mmp.base.HelperClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
+/*
+* PageObject Model : HomePage.java
+*/
 
 public class HomePage {
 	
